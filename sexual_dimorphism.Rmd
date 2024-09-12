@@ -1,0 +1,12 @@
+##Sexual Dimorphism
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+ggplot(data = penguins) + 
+  geom_point(mapping = aes(x = body_mass_g, y = bill_length_mm, color = sex)) +
+  facet_wrap(~species)
+```
+
+
+In all three species, females tend to have lower bill lengths and body masses than males.

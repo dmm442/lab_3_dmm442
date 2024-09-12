@@ -1,0 +1,10 @@
+## Single trait distribution
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+ggplot(data = penguins) +
+  geom_point(mapping = aes(x = body_mass_g, y = species))
+```
+
+
+ gentoo penguin weighing approximately 6300 g has the highest body mass of the data set, and a chinstrap penguin weighing approximately 2700 g has the lowest body mass.

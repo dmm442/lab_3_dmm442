@@ -1,0 +1,12 @@
+---
+title: "Lab 3 Website"
+author: "Diana"
+date: "2024-09-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## This is the website I made for Exercise #2 of Lab 3. 

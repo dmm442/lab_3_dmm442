@@ -1,0 +1,17 @@
+name: "lab_3_dmm442"
+navbar:
+  title: "Lab 3 for dmm442"
+  left:
+    - text: "Single Trait Distribution"
+      href: single_trait_distribution.html
+    - text: "Relationship Between Multiple Traits"
+      href: relationship_between_multiple_traits.html
+    - text: "Sexual Dimorphism"
+      href: sexual_dimorphism.html
+output_dir: "."
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    toc: true 
+    toc_float: true

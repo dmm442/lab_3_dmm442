@@ -1,0 +1,11 @@
+## Relationship between multiple traits
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+ggplot(data = penguins) + 
+  geom_point(mapping = aes(x = body_mass_g, y = bill_length_mm, color = species))
+
+```
+
+
+Bill length in mm and body mass in g are proportionally related.
