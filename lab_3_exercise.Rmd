@@ -1,0 +1,38 @@
+---
+title: "penguins"
+author: "Diana"
+date: "2024-09-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data
+
+## Single trait distribution
+```{r}
+View(penguins)
+ggplot(data = penguins) +
+  geom_point(mapping = aes(x = body_mass_g, y = species))
+
+```
+A gentoo penguin weighing approximately 6300 g has the highest body mass of the data set, and a chinstrap penguin weighing approximately 2700 g has the lowest body mass.
+
+## Relationship between multiple traits
+```{r}
+ggplot(data = penguins) + 
+  geom_point(mapping = aes(x = body_mass_g, y = bill_length_mm, color = species))
+```
+Bill length in mm and body mass in g are proportionally related.
+
+##Sexual Dimorphism
+```{r}
+ggplot(data = penguins) + 
+  geom_point(mapping = aes(x = body_mass_g, y = bill_length_mm, color = sex)) +
+  facet_wrap(~species)
+```
+In all three species, females tend to have lower bill lengths and body masses than males. 
+
+
